@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Search Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Blog Search Page</h1>
+        <button id="toggleDarkMode">🌙 Dark Mode</button>
+
+        <!-- Search and Filter -->
+        <input type="text" id="searchBox" placeholder="Search blogs..." />
+        <select id="categoryFilter">
+            <option value="All">All Categories</option>
+            <option value="Technology">Technology</option>
+            <option value="Lifestyle">Lifestyle</option>
+            <option value="Health">Health</option>
+        </select>Toggle 
+
+        <!-- Add Blog -->
+        <button id="addBlogBtn">Add Blog</button>
+        <div id="addBlogForm" style="display: none;">
+            <h3>Add New Blog</h3>
+            <input type="text" id="blogTitle" placeholder="Blog Title" />
+            <textarea id="blogContent" placeholder="Blog Content"></textarea>
+            <select id="blogCategory">
+                <option value="Technology">Technology</option>
+                <option value="Lifestyle">Lifestyle</option>
+                <option value="Health">Health</option>
+            </select>
+            <button id="saveBlogBtn">Save Blog</button>
+        </div>
+
+        <!-- Results Display -->
+        <div id="results"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
